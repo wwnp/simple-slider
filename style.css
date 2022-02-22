@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+
+html, body {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.container {
+  /* max-width: auto; */
+  /* margin: 30px auto; */
+  background: #1a1919;
+  padding: 30px;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+button {
+  background: none;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: .9rem;
+}
+
+button:hover {
+  background: orangered;
+}
+
+button:active {
+  background: #000;
+  color: #fff;
+}
+
+.slider {
+  border: 2px solid black;
+  width: 1500px;
+  height: 256px;
+  margin: 20px auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-line {
+  /* width: 768px; */
+  height: 256px;
+  display: flex;
+  flex-direction: row;
+  /* flex: 0 0 1000px; */
+  /* background: orange; */
+  position: relative;
+  left: 0;
+  transition: all ease .85s;
+}
+
+.slider-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  /* width: 200px; */
+  background-color: rgb(36, 185, 6);
+}
+.slider-item img {
+  margin: 0 auto;
+  width: 30%;
+  height: auto;
+  /* width: min-content; */
+}
+.slider-item p {
+  padding-top: 5px;
+  text-align: center;
+  /* width: min-content; */
+}
+
+
+/* .slider-line:nth-child(odd) { */
+  /* background: rgb(255, 0, 0);
+}
+.slider-line:nth-child(even) {
+  background: rgb(8, 31, 167);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider-arrow {
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  background-color: rgb(19, 19, 19);
+  color: green;
+  font-size: 3rem;
+  transform: translateY(-50%);
+}
+
+.slider-prev {
+  left: 1rem;
+}
+
+.slider-next {
+  right: 1rem;
+}
